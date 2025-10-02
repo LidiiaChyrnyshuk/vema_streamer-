@@ -58,6 +58,7 @@ body::before {
 		position: relative;
 		z-index: 5;
 		padding-bottom: 9.14vw;
+		overflow: hidden;
 	}
 	.container::after {
 		content: "";
