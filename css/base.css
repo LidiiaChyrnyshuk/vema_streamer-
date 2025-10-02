@@ -12,6 +12,7 @@ html {
 	scroll-behavior: smooth;
 	height: auto;
 	min-height: 100%;
+	overflow-x: hidden;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
 	width: 100vw;
 	height: auto;
 	min-height: 100dvh;
-	overflow-x: hidden;
+	overflow: hidden;
 	font-size: 16px;
 }
 
@@ -30,6 +31,7 @@ body::after {
 	position: absolute;
 	inset: 0;
 	pointer-events: none;
+	overflow: hidden;
 	z-index: 2;
 	background-image: url(../images/body/pattern.webp);
 	opacity: 1;
@@ -42,6 +44,7 @@ body::before {
 	position: absolute;
 	inset: 0;
 	pointer-events: none;
+	overflow: hidden;
 	z-index: 3;
 	background: rgba(26, 26, 30, 0.8);
 	opacity: 1;
@@ -57,7 +60,7 @@ body::before {
 		min-height: 100dvh;
 		position: relative;
 		z-index: 5;
-		padding-bottom: 9.14vw;
+		/* padding-bottom: 9.14vw; */
 		overflow: hidden;
 	}
 	.container::after {
@@ -65,6 +68,7 @@ body::before {
 		position: absolute;
 		inset: 0;
 		pointer-events: none;
+		overflow: hidden;
 		z-index: 2;
 		background-image: url(../images/body/hero-img-mob.webp);
 		opacity: 1;
@@ -77,6 +81,7 @@ body::before {
 		position: absolute;
 		inset: 0;
 		pointer-events: none;
+		overflow: hidden;
 		z-index: 2;
 		background-image: url(../images/body/footer-img-mob.webp);
 		opacity: 1;
@@ -92,13 +97,15 @@ body::before {
 		min-height: 100dvh;
 		position: relative;
 		z-index: 5;
-		padding-bottom: 5.95vw;
+		/* padding-bottom: 5.95vw; */
+		overflow: hidden;
 	}
 	.container::after {
 		content: "";
 		position: absolute;
 		inset: 0;
 		pointer-events: none;
+		overflow: hidden;
 		z-index: 3;
 		background-image: url(../images/body/bg-img-desk.webp);
 		opacity: 1;
@@ -111,6 +118,7 @@ body::before {
 		position: absolute;
 		inset: 0;
 		pointer-events: none;
+		overflow: hidden;
 		z-index: 2;
 		background-image: url(../images/accents/light_hero_left.png),
 			url(../images/accents/light_hero-center.png),
