@@ -1,0 +1,67 @@
+.hero {
+	position: relative;
+	z-index: 5;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 24.39vw;
+	padding-bottom: 7.31vw;
+	padding-left: 4.87vw;
+	padding-right: 4.87vw;
+}
+.title-wrap {
+	width: 90.24vw;
+	height: 28.65vw;
+	border-radius: 8.53vw;
+	background: linear-gradient(180deg, #44ffa6 0%, #0ee47e 62.45%, #00dc74 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 4.87vw;
+}
+.title {
+	font-family: "DelaGothicOne";
+	font-weight: 400;
+	font-style: normal;
+	font-size: 7.31vw;
+	line-height: 120%;
+	letter-spacing: 2%;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--second-color-text);
+}
+.text {
+	font-family: "Syncopate";
+font-weight: 700;
+font-style: normal;
+font-size: 4.87vw;
+line-height: 6.09vw;
+letter-spacing: 2%;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 7.31vw;
+}
+@media screen and (min-width: 1440px) {
+	.hero {
+		padding-top: 0;
+		padding-bottom: 4.83vw;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.title-wrap {
+	width: 24.75vw;
+	height: 8.33vw;
+	border-radius: 2.29vw;
+	margin-bottom: 2.08vw;
+}
+.title {
+	font-size: 2.08vw;
+}
+.text {
+font-size: 1.41vw;
+line-height: 1.41vw;
+margin-bottom: 1.91vw;
+}
+}

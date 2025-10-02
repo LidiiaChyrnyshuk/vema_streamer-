@@ -1,0 +1,28 @@
+.header {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 14.02vw;
+  padding-bottom: 46.34vw;
+}
+.header-logo {
+width: 52.13vw;
+max-width: 418px;
+height: 6.09vw;
+max-height: 48px;
+}
+
+@media screen and (min-width:1440px) {
+  .header {
+  padding-top: 2.5vw;
+  padding-bottom: 3.83vw;
+}
+.header-logo {
+width: 17.41vw;
+max-width: 418px;
+height: 2vw;
+max-height: 48px;
+}
+}

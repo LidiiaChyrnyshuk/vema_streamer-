@@ -1,0 +1,21 @@
+/* --------fonts----------- */
+@font-face {
+	font-family: "Syncopate";
+	src: url("../fonts/Syncopate-Bold.ttf") format("opentype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "DelaGothicOne";
+	src: url("../fonts/DelaGothicOne-Regular.ttf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "MontserratBold";
+	src: url("../fonts/Montserrat-Bold.ttf") format("opentype");
+	font-weight: 700;
+	font-style: normal;
+}

@@ -1,0 +1,125 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+html {
+	width: 100vw;
+	scroll-behavior: smooth;
+	height: auto;
+	min-height: 100%;
+}
+
+body {
+	color: var(--third-color-text);
+	background: var(--color-bg);
+	position: relative;
+	width: 100vw;
+	height: auto;
+	min-height: 100dvh;
+	overflow-x: hidden;
+	font-size: 16px;
+}
+
+body::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	z-index: 2;
+	background-image: url(../images/body/pattern.webp);
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+body::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	z-index: 3;
+	background: rgba(26, 26, 30, 0.8);
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+@media screen and (max-width: 1439px) {
+	.container {
+		width: 100vw;
+		height: auto;
+		min-height: 100dvh;
+		position: relative;
+		z-index: 5;
+		padding-bottom: 9.14vw;
+	}
+	.container::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 2;
+		background-image: url(../images/body/hero-img-mob.webp);
+		opacity: 1;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: top 9.14vw center;
+	}
+	.container::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 2;
+		background-image: url(../images/body/footer-img-mob.webp);
+		opacity: 1;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: bottom center;
+	}
+}
+@media screen and (min-width: 1440px) {
+	.container {
+		width: 100vw;
+		height: auto;
+		min-height: 100dvh;
+		position: relative;
+		z-index: 5;
+		padding-bottom: 5.95vw;
+	}
+	.container::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 3;
+		background-image: url(../images/body/bg-img-desk.webp);
+		opacity: 1;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.container::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 2;
+		background-image: url(../images/accents/light_hero_left.png),
+			url(../images/accents/light_hero-center.png),
+			url(../images/accents/light_hero_right.png),
+			url(../images/accents/light_footer_left.png),
+			url(../images/accents/light_footer_center.png),
+			url(../images/accents/light_footer_right.png);
+		opacity: 1;
+		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+		background-size: 33.83vw 33.83vw, 28.66vw 28.66vw, 37.79vw 37.79vw, 40.33vw 40.33vw, 66.66vw 30.83vw, 52.29vw 52.29vw;
+		background-position: left top, top center, right top, left bottom, bottom center, right bottom;
+	}
+}

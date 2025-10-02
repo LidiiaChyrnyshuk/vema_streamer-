@@ -1,0 +1,9 @@
+:root {
+  --color-bg: linear-gradient(180deg, #0B2C30 0%, #020D0E 32%);
+  --first-color-text: rgba(0, 255, 134, 1);
+  --second-color-text: rgba(41, 42, 46, 1);
+  --third-color-text: rgba(255, 255, 255, 1);
+  --color-bg-btn: linear-gradient(180deg, #44FFA6 0%, #00DC74 100%); 
+
+}
+

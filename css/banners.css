@@ -1,0 +1,36 @@
+.banners {
+	position: relative;
+	z-index: 5;
+	padding-top: 3.65vw;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.banners-list {
+	display: flex;
+	flex-direction: column;
+}
+.banners-item {
+	width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+	.banners {
+		padding-top: 1.08vw;
+	}
+	.banners-list {
+		width: 75vw;
+		max-width: 1800px;
+		height: 28.33vw;
+		max-height: 680px;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	.banners-item {
+		flex: 0 0 calc(100% / 3);
+		height: 15.58vw;
+		max-height: 350px;
+	}
+}

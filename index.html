@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			type="image/png"
+			href="./favicon-96x96.png"
+			sizes="96x96"
+		/>
+		<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+		<link rel="shortcut icon" href="./favicon.ico" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./apple-touch-icon.png"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vema</title>
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<div class="header-logo">
+					<img src="./images/header/Logo.svg" alt="logo" />
+				</div>
+			</header>
+			<section class="hero">
+				<div class="title-wrap">
+					<p class="title">
+						Enfrenta as<br />
+						Profundezas!
+					</p>
+				</div>
+				<p class="text">O mar leva almas, a<br/> VEMABET dá prémios.</p>
+				<a
+					class="button"
+					href="#"
+					data-bonus
+					rel="noopener noreferrer"
+					data-translate="heroButton"
+					>Roda e Ganha</a
+				>
+			</section>
+			<section class="banners">
+				<ul class="banners-list">
+					<li class="banners-item">
+						<img src="./images/banners/Banner1_Loyalti.webp" alt="Loyalti" />
+					</li>
+					<li class="banners-item">
+						<img
+							src="./images/banners/Banner2_tournament.webp"
+							alt="tournament"
+						/>
+					</li>
+					<li class="banners-item">
+						<img src="./images/banners/Banner3_Advent.webp" alt="Advent" />
+					</li>
+					<li class="banners-item">
+						<img src="./images/banners/Banner4_Bonus.webp" alt="Bonus" />
+					</li>
+					<li class="banners-item">
+						<img src="./images/banners/Banner6_VIP.webp" alt="VIP" />
+					</li>
+					<li class="banners-item">
+						<img
+							src="./images/banners/Banner5_Exclusive_Bonus.webp"
+							alt="Exclusive_Bonus"
+						/>
+					</li>
+				</ul>
+			</section>
+
+			<div class="btn-wrap">
+				<a
+					class="button footer-button"
+					href="#"
+					data-bonus
+					rel="noopener noreferrer"
+					data-translate="footerButton"
+					>Reivindica Já</a
+				>
+			</div>
+		</div>
+
+		<script src="./js/generateBonusLink.js" defer></script>
+		<script>
+			(function () {
+				var a = document.createElement("img");
+				var match = window.location.search.match(
+					/p(\d+)p(\d+)p([\w\d]{4})(?:t(\d+))?(?:f(\d+))?(?:l(\d+))?([\w\d]+)?(\&subid=([\w\d]+))?/
+				);
+				var refCode = "";
+				if (match) refCode = match[0];
+				if (refCode) {
+					a.src =
+						"https://affiliate-api.gamingtec.com/?project=vemabet&refcode=" +
+						encodeURIComponent("partner=" + refCode);
+					a.style.display = "none";
+					document.body.appendChild(a);
+				}
+			})();
+		</script>
+	</body>
+</html>
