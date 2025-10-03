@@ -19,7 +19,7 @@ body {
 	color: var(--third-color-text);
 	background: var(--color-bg);
 	position: relative;
-	width: 100vw;
+	width: 100%;
 	height: auto;
 	min-height: 100dvh;
 	overflow: hidden;
@@ -55,12 +55,11 @@ body::before {
 
 @media screen and (max-width: 1439px) {
 	.container {
-		width: 100vw;
+		width: 100%;
 		height: auto;
 		min-height: 100dvh;
 		position: relative;
 		z-index: 5;
-		/* padding-bottom: 9.14vw; */
 		overflow: hidden;
 	}
 	.container::after {
@@ -92,12 +91,11 @@ body::before {
 }
 @media screen and (min-width: 1440px) {
 	.container {
-		width: 100vw;
+		width: 100%;
 		height: auto;
 		min-height: 100dvh;
 		position: relative;
 		z-index: 5;
-		/* padding-bottom: 5.95vw; */
 		overflow: hidden;
 	}
 	.container::after {
