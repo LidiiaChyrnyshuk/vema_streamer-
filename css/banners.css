@@ -24,7 +24,7 @@
 	.banners-list {
 		width: 75vw;
 		max-width: 1800px;
-		height: 28.33vw;
+		/* height: 28.33vw; */
 		max-height: 680px;
 		display: flex;
 		flex-wrap: wrap;
